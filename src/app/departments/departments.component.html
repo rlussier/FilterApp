@@ -1,0 +1,33 @@
+<header>
+    <section class="filter-list header_container">
+        <a class="btn btn-close" routerLink="/" routerLinkActive="active">-</a>
+             <div class="department-list">   
+             <div class="department">
+             <div class="dept-name active">
+                 <a class="btn_department" routerLink="/" routerLinkActive="active">All Departments</a>
+             </div>
+                 <div class="subjects-wrapper">
+                 <div class="subject-name active">All Subjects</div>
+             </div>
+          </div>
+     </div>
+     </section>
+ </header>
+<div class="body-wrapper">
+
+  <div class="department-list department_container-wrapper" *ngFor="let department of departments">
+    <div class="department department-name-tooltip">
+        <div class="dept-name tooltip-content">{{department.name}}</div>
+            <div class="subjects-wrapper">
+             <div class="subject-name">{{department.subjects[0]}}</div>
+             <div class="subject-name">{{department.subjects[1]}}</div>
+             <div class="subject-name">{{department.subjects[2]}}</div>
+             <div class="subject-name">{{department.subjects[3]}}</div>
+             <div class="subject-name">{{department.subjects[4]}}</div>
+             <div class="subject-name">{{department.subjects[5]}}</div>
+             <div class="subject-name">{{department.subjects[6]}}</div>
+             <a class="btn_subjects btn-expand" routerLink="/view3" routerLinkActive="active">+ 8 more</a>
+        </div>
+</div>
+</div>
+        

@@ -1,0 +1,19 @@
+<section class="filter-list">
+       <a class="btn btn-expand" routerLink="/" routerLinkActive="active">+</a>
+        <div class="department-list">
+            <div class="department department-name-tooltip" *ngFor="let department of departments">
+                <div class="dept-name tooltip-content">{{department.name}}</div>
+                <div class="subjects-wrapper">
+                    <div class="subject-name">{{department.subjects[7]}}</div>
+                    <div class="subject-name">{{department.subjects[8]}}</div>
+                    <div class="subject-name">{{department.subjects[9]}}</div>
+                    <div class="subject-name">{{department.subjects[10]}}</div>
+                    <div class="subject-name">{{department.subjects[11]}}</div>
+                    <div class="subject-name">{{department.subjects[12]}}</div>
+                    <div class="subject-name">{{department.subjects[13]}}</div>
+                    <a class="btn_subjects btn-expand" routerLink="/" routerLinkActive="active">+ 8 more</a>
+                </div>
+
+        </div>
+    </div>
+</section>

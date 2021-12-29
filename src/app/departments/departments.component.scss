@@ -1,0 +1,111 @@
+.department_container-wrapper {
+    background-color: #87ceeb;
+    padding: 1rem;
+}
+
+.department-list{
+    display: flex;
+    flex-direction: column;
+
+    .department{
+        display: flex;
+        flex-shrink: 0;
+
+        + .department{
+            margin-top: 1vw;
+            padding-top: 1vw;
+            border-top: 1px dashed #333;
+        }
+
+    }
+}
+
+.dept-name {
+    font-size: 1vw;
+    font-weight: bold;
+    background: gray;
+    border-radius: .25vw;
+    flex: none;
+    font-size: 1vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0.5vw;
+    padding: 1vw;
+    border-radius: 0.25vw;
+    margin-right: 1vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+    &.active{
+        background: #333;
+        color: #FFFAFA;
+    }:hover {
+        text-decoration: none;
+    }
+}
+
+.subjects-wrapper{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    .subject-name{
+        border: 1px solid #CCC;
+        font-size: 1vw;
+        margin-right: .5vw;
+        margin-bottom: .5vw;
+        padding: 1vw;
+        border-radius: .25vw;
+        &:hover{
+            cursor: pointer;
+            background: skyblue;
+            color: white;
+        }
+        &.active{
+            background: white;
+            color: blueviolet;
+            font-weight: bold;
+            &:hover{
+                cursor: default;
+            }
+        }
+    }
+    .more-less{
+        border: 1px solid transparent;
+        font-size: 1vw;
+        padding: 1vw;
+        font-weight: bold;
+    }
+}
+
+.btn_subjects {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 1vw;
+    padding: 2vw 2vh;
+}
+
+// .department-name-tooltip{
+//     background:black;
+//     position: absolute;
+//     top: 0;
+//     padding: .25vw .5vw;
+//     border-radius: .25vw;
+//     &:before{
+//         content: '';
+//         display: block;
+//         position: absolute;
+//         bottom: -.6vw;
+//         // left: calc(50% - .4vw);
+//         width: 0; 
+//         height: 0; 
+//         border-left: .8vw solid transparent;
+//         border-right: .8vw solid transparent;
+//         border-top: .8vw solid black;
+//     }
+//     .tooltip-content {
+//         color: white;
+//         font-size: .7em;
+//         line-height: 1.2;
+//     }
+// }

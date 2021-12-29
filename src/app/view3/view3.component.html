@@ -1,0 +1,18 @@
+<section class="filter-list">
+                 <a class="btn btn-expand" routerLink="/" routerLinkActive="active">+</a>
+                    <div class="department-list">
+                        <div class="department">
+                            <div class="dept-name active" *ngfor="let department of departments">Physics</div>
+                            <div class="subjects-wrapper department-name-tooltip" *ngfor="let department of departments">
+                                <div class="subject-name active">{{department.name}}</div>
+                                <div class="subject-name tooltip-content">{{department.subject}}</div>
+                                <div class="subject-name tooltip-content">{{department.subject}}</div>
+                                <div class="subject-name tooltip-content">{{department.subject}}</div>
+                                <div class="subject-name tooltip-content">{{department.subject}}</div>
+                                <div class="more-less"> 
+                                <a class="btn btn-expand" routerLink="/view4" routerLinkActive="active">+ 8 more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
